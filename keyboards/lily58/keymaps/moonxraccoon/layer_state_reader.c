@@ -1,4 +1,3 @@
-
 #include QMK_KEYBOARD_H
 #include <stdio.h>
 #include "lily58.h"
@@ -14,26 +13,25 @@
 char layer_state_str[24];
 
 const char *read_layer_state(void) {
-  switch (layer_state)
-  {
-  case L_BASE:
-    snprintf(layer_state_str, sizeof(layer_state_str), "LayerBase");
-    break;
-  case L_RAISE:
-    snprintf(layer_state_str, sizeof(layer_state_str), "LayerRaise");
-    break;
-  case L_LOWER:
-    snprintf(layer_state_str, sizeof(layer_state_str), "LayerLower");
-    break;
-  case L_ADJUST_L:
-    snprintf(layer_state_str, sizeof(layer_state_str), "LayerAdj");
-    break;
-  case L_ADJUST_R:
-    snprintf(layer_state_str, sizeof(layer_state_str), "LayerAdj");
-    break;
-  default:
-    snprintf(layer_state_str, sizeof(layer_state_str), "LayerUndef-%ld", layer_state);
-  }
+    switch (layer_state) {
+        case L_BASE:
+            snprintf(layer_state_str, sizeof(layer_state_str), "LayerBase");
+            break;
+        case L_RAISE:
+            snprintf(layer_state_str, sizeof(layer_state_str), "LayerRaise");
+            break;
+        case L_LOWER:
+            snprintf(layer_state_str, sizeof(layer_state_str), "LayerLower");
+            break;
+        case L_ADJUST_L:
+            snprintf(layer_state_str, sizeof(layer_state_str), "LayerAdj");
+            break;
+        case L_ADJUST_R:
+            snprintf(layer_state_str, sizeof(layer_state_str), "LayerAdj");
+            break;
+        default:
+            snprintf(layer_state_str, sizeof(layer_state_str), "LayerUndef-%ld", (long int)layer_state);
+    }
 
-  return layer_state_str;
+    return layer_state_str;
 }
