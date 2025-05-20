@@ -125,7 +125,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [INTERNATIONAL] = LAYOUT(
         KC_SLEP, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,                        KC_TRNS, KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS, KC_TRNS,
         KC_GRV, KC_TRNS, KC_MPRV, KC_MPLY, KC_MNXT, KC_TRNS,                         KC_KB_VOLUME_UP, RALT(KC_Y), KC_TRNS, RALT(KC_P), KC_TRNS, KC_TRNS,
-        KC_F1,  RALT(KC_Q), RALT(KC_S),   KC_F4,   KC_F5,   KC_F6,                           KC_KB_VOLUME_DOWN, KC_LEFT, KC_DOWN, KC_UP, KC_RGHT, KC_MUTE,
+        KC_F1,  RALT(KC_Q), RALT(KC_S),   KC_F4,   KC_F5,   KC_F6,                   KC_KB_VOLUME_DOWN, KC_LEFT, KC_DOWN, KC_UP, KC_RGHT, KC_MUTE,
         KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, KC_F12, KC_TRNS, KC_TRNS,        KC_NO, KC_MINS, KC_EQL, KC_LBRC, KC_RBRC, KC_BSLS,
                                      KC_TRNS,KC_TRNS,MO(UTILITY),KC_TRNS,     KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS),
 
