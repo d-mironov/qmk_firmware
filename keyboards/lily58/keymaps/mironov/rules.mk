@@ -11,7 +11,7 @@ RGBLIGHT_ENABLE = yes       # Enable WS2812 RGB underlight.
 SWAP_HANDS_ENABLE = no      # Enable one-hand typing
 OLED_ENABLE= yes     		# OLED display
 WPM_ENABLE = yes 			# Word per Minute calculation
-UNICODE_ENABLE = yes		# Unicode support
+OS_DETECTION_ENABLE = yes	# Enable OS detection
 
 # Bootloader selection
 BOOTLOADER = atmel-dfu
